@@ -1,10 +1,11 @@
 from django.urls import include, path
 from rest_framework import routers
-from swirts.quickstart import views
+from fwbm import views
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
+router.register(r'collisions', views.CollisionView)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.

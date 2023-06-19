@@ -1,0 +1,19 @@
+FROM python:3.9
+
+ENV PYTHONUNBUFFERED 1
+
+WORKDIR /app/
+
+# Install Python dependencies for development
+COPY ./django/requirements.txt requirements.txt
+RUN pip3 install --upgrade pip -r requirements.txt
+
+COPY ./django .
+
+EXPOSE 8000
+
+COPY ./docker/django/django-entrypoint.sh /
+
+RUN chmod +x /django-entrypoint.sh
+
+ENTRYPOINT ["/django-entrypoint.sh"]

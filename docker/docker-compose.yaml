@@ -9,3 +9,15 @@ services:
       - 8000:8000
     volumes:
       - ../django:/app
+  
+  db:
+    container_name: fwbm_db
+    build:
+      context: ..
+      dockerfile: ./docker/postgres/Dockerfile
+    restart: unless-stopped
+    volumes:
+      - ../volumes/dbStorage:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: "fwbm"
+      POSTGRES_HOST_AUTH_METHOD: "trust"

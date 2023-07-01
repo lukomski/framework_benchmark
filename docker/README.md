@@ -1,6 +1,6 @@
 ### Recreate dockers
 ```
-docker rm fwbm_django fwbm_db
+docker rm fwbm_django fwbm_db fwbm_dotnet
 docker compose up --build
 ```
 

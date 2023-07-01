@@ -21,3 +21,12 @@ services:
     environment:
       POSTGRES_DB: "fwbm"
       POSTGRES_HOST_AUTH_METHOD: "trust"
+
+  dotnet:
+    container_name: fwbm_dotnet
+    build:
+      context: ..
+      dockerfile: ./docker/dotnet/Dockerfile.dev
+    ports:
+      - 5028:80
+    command: [ "sleep", '999999999999' ]

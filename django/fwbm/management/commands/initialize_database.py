@@ -8,6 +8,8 @@ class Command(BaseCommand):
     
     @tracked_script
     def handle(self, *args, **options):
-        b = Blog(name='Some name', tagline='Some tagline')
-        b.save()
+        for idx in range(1000):
+            b = Blog(name=f'Some name {idx}', tagline='Some tagline {idx}')
+            b.save()
+        self.stdout.write(f'Count of Blogs: {Blog.objects.count()}')
         self.stdout.write('Database initialized')

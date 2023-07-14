@@ -21,6 +21,8 @@ services:
     environment:
       POSTGRES_DB: "fwbm"
       POSTGRES_HOST_AUTH_METHOD: "trust"
+    ports:
+      - 5435:5432
 
   dotnet:
     container_name: fwbm_dotnet

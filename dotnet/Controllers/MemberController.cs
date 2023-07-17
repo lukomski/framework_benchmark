@@ -8,19 +8,6 @@ namespace dotnet.Controllers;
 [Route("[controller]")]
 public class MemberController : ControllerBase
 {
-    private static readonly string[] Names = new[]
-    {
-        "Liam",
-        "Noah",
-        "William",
-        "James",
-        "Logan",
-        "Benjamin",
-        "Mason"
-    };
-
-
-
     private readonly GatherSyncContext _gatherSyncContext;
 
     public MemberController(GatherSyncContext gatherSyncContext)
@@ -35,12 +22,33 @@ public class MemberController : ControllerBase
         return memebers;
     }
 
-    [HttpGet("random")]
-    public IEnumerable<Member> Get()
+    [HttpPost]
+    public async Task<IActionResult> PostAsync(Member member)
     {
-        return Enumerable.Range(1, 5).Select(index =>
-            new Member(Names[Random.Shared.Next(Names.Length)])
-        )
-        .ToArray();
+        _gatherSyncContext.Members.Add(member);
+        await _gatherSyncContext.SaveChangesAsync();
+        return Created($"{member.Id}", member);
+    }
+
+    [HttpPut]
+    public async Task<IActionResult> PutAsync(Member memberToUpdate)
+    {
+        _gatherSyncContext.Members.Update(memberToUpdate);
+        await _gatherSyncContext.SaveChangesAsync();
+        return NoContent();
+    }
+
+    [Route("{id}")]
+    [HttpDelete]
+    public async Task<IActionResult> DeleteAsync(int id)
+    {
+        var memberToDelete = await _gatherSyncContext.Members.FindAsync(id);
+        if (memberToDelete == null)
+        {
+            return NotFound();
+        }
+        _gatherSyncContext.Members.Remove(memberToDelete);
+        await _gatherSyncContext.SaveChangesAsync();
+        return NoContent();
     }
 }

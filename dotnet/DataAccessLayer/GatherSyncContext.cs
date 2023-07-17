@@ -8,12 +8,12 @@ namespace dotnet.DataAccessLayer
 
         private string ConnectionString = "Server=localhost;Database=fwbm;Port=5435;User Id=postgres;Integrated Security=True;";
 
-        public GatherSyncContext() 
+        public GatherSyncContext()
         {
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseNpgsql(ConnectionString);
+                => options.UseNpgsql(ConnectionString);
 
         public DbSet<Member> Members { get; set; }
     }

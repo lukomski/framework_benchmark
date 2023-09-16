@@ -1,15 +1,17 @@
-version: '3'
+version: "3"
 services:
   django:
-    container_name: fwbm_django
-    build: 
+    build:
       context: ..
-      dockerfile: ./docker/django/Dockerfile.dev
-    ports:
-      - 8000:8000
+      dockerfile: ./docker/django/Dockerfile.prod
+    command: gunicorn root.wsgi:application --bind 0.0.0.0:8000
+    expose:
+      - 8000
     volumes:
-      - ../django:/app
-  
+      - static_volume:/home/app/web/static
+    depends_on:
+      - db
+
   db:
     container_name: fwbm_db
     build:
@@ -24,11 +26,16 @@ services:
     ports:
       - 5435:5432
 
-  dotnet:
-    container_name: fwbm_dotnet
+  nginx:
     build:
       context: ..
-      dockerfile: ./docker/dotnet/Dockerfile.dev
+      dockerfile: ./docker/nginx/Dockerfile.prod
+    volumes:
+      - static_volume:/home/app/web/staticfiles
     ports:
-      - 5028:80
-    command: [ "sleep", '999999999999' ]
+      - 8000:80
+    depends_on:
+      - django
+
+volumes:
+  static_volume:

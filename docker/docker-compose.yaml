@@ -1,17 +1,5 @@
 version: "3"
 services:
-  django:
-    build:
-      context: ..
-      dockerfile: ./docker/django/Dockerfile.prod
-    command: gunicorn root.wsgi:application --bind 0.0.0.0:8000
-    expose:
-      - 8000
-    volumes:
-      - static_volume:/home/app/web/static
-    depends_on:
-      - db
-
   db:
     container_name: fwbm_db
     build:
@@ -25,17 +13,3 @@ services:
       POSTGRES_HOST_AUTH_METHOD: "trust"
     ports:
       - 5435:5432
-
-  nginx:
-    build:
-      context: ..
-      dockerfile: ./docker/nginx/Dockerfile.prod
-    volumes:
-      - static_volume:/home/app/web/staticfiles
-    ports:
-      - 8000:80
-    depends_on:
-      - django
-
-volumes:
-  static_volume:

@@ -1,0 +1,13 @@
+version: "3"
+services:
+  django_dev:
+    container_name: fwbm_django
+    build:
+      context: ..
+      dockerfile: ./docker/django/Dockerfile.dev
+    ports:
+      - 8000:8000
+    volumes:
+      - ../django:/app
+    depends_on:
+      - db

@@ -23,5 +23,16 @@ services:
     depends_on:
       - django
 
+  dotnet:
+    build:
+      context: ..
+      dockerfile: ./docker/dotnet/Dockerfile.prod
+    ports:
+      - 5029:80
+    depends_on:
+      - db
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+
 volumes:
   static_volume:

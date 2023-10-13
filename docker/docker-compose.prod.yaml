@@ -28,11 +28,24 @@ services:
       context: ..
       dockerfile: ./docker/dotnet/Dockerfile.prod
     ports:
-      - 5029:80
+      - 5028:80
     depends_on:
       - db
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+  
+  nestjs:
+    build:
+      context: ..
+      dockerfile: ./docker/nestjs/Dockerfile.prod
+    environment:
+      - PORT=${PORT}
+      - DB_HOST=db
+      - DB_PORT=5432
+    ports:
+      - 3000:3000
+    depends_on:
+      - db
 
 volumes:
   static_volume:

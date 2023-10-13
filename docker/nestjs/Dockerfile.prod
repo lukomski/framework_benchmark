@@ -1,0 +1,13 @@
+FROM node:18
+
+WORKDIR /app
+
+COPY ./nestjs/package*.json ./
+
+RUN npm install
+
+COPY ./nestjs ./
+
+RUN npm run build
+
+CMD [ "npm", "run", "start" ]

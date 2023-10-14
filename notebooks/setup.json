@@ -1,7 +1,7 @@
 {
   "apps": {
     "dotnet": {
-      "url": "http://localhost:5028/Member/",
+      "url": "http://localhost:5029/Member/",
       "name": "dotnet"
     },
     "django": {

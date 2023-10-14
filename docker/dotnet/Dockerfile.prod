@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build-env
 WORKDIR /App
-EXPOSE 5028
+EXPOSE 5029
 
 # Copy everything
 COPY ./dotnet ./

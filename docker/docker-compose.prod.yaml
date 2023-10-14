@@ -28,7 +28,7 @@ services:
       context: ..
       dockerfile: ./docker/dotnet/Dockerfile.prod
     ports:
-      - 5028:80
+      - 5029:80
     depends_on:
       - db
     environment:

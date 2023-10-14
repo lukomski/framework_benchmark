@@ -1,3 +1,6 @@
 {
-  "dotnet.defaultSolution": "dotnet/dotnet.sln"
+  "dotnet.defaultSolution": "dotnet/dotnet.sln",
+  "python.analysis.extraPaths": [
+    "./tests/common"
+  ]
 }

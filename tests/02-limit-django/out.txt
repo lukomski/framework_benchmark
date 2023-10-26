@@ -1,0 +1,57 @@
+---------------------------------------------------------------------------
+vus = 1, beg = 1, end = Nonevus = 2, beg = 1, end = None
+-------------------------
+vus = 1, beg = 1, end = None
+vus = 2, beg = 1, end = None
+vus = 4, beg = 2, end = None
+vus = 8, beg = 4, end = None
+vus = 16, beg = 8, end = None
+vus = 32, beg = 16, end = None
+vus = 64, beg = 32, end = None
+vus = 128, beg = 64, end = None
+vus = 256, beg = 128, end = None
+vus = 512, beg = 256, end = None
+vus = 1024, beg = 512, end = None
+vus = 2048, beg = 1024, end = None
+vus = 4096, beg = 2048, end = None
+vus = 3072, beg = 2048, end = 4096
+vus = 2048, beg = 2048, end = 3072
+vus = 2048, beg = 2048, end = 3072
+vus = 2048, beg = 2048, end = 3072
+vus = 2048, beg = 2048, end = 3072
+vus = 2048, beg = 2048, end = 3072
+-------------------------
+vus = 512, beg = 1, end = None, incorrect_part = 0.0
+vus = 1024, beg = 512, end = None, incorrect_part = 0.0
+vus = 2048, beg = 1024, end = None, incorrect_part = 0.0
+vus = 4096, beg = 2048, end = None, incorrect_part = 0.47256738673293824
+vus = 3072, beg = 2048, end = 4096, incorrect_part = 0.16259298618490967
+vus = 2048, beg = 2048, end = 3072, incorrect_part = 0.0
+vus = 2048, beg = 2048, end = 3072, incorrect_part = 0.0
+vus = 2048, beg = 2048, end = 3072, incorrect_part = 0.9847314201618838
+-------------------------
+vus = 2048, beg = 1, end = None, incorrect_part = 0.0
+vus = 4096, beg = 2048, end = None, incorrect_part = 0.4372344534569332
+vus = 3072, beg = 2048, end = 4096, incorrect_part = 0.0
+vus = 2560, beg = 3072, end = 4096, incorrect_part = 0.0
+vus = 2816, beg = 2560, end = 4096, incorrect_part = 0.0
+vus = 2688, beg = 2816, end = 4096, incorrect_part = 0.0
+vus = 2752, beg = 2688, end = 4096, incorrect_part = 0.0
+vus = 2720, beg = 2752, end = 4096, incorrect_part = 0.0
+vus = 2736, beg = 2720, end = 4096, incorrect_part = 0.0
+vus = 2728, beg = 2736, end = 4096, incorrect_part = 0.0
+vus = 2732, beg = 2728, end = 4096, incorrect_part = 0.0
+-------------------------
+vus = 2048, beg = 1, end = None, incorrect_part = 0.0
+vus = 4096, beg = 2048, end = None, incorrect_part = 0.536897152818129
+vus = 3072, beg = 2048, end = 4096, incorrect_part = 0.008506616257088847
+vus = 2560, beg = 2048, end = 3072, incorrect_part = 0.0
+vus = 2816, beg = 2560, end = 3072, incorrect_part = 0.0
+vus = 2944, beg = 2816, end = 3072, incorrect_part = 0.0
+vus = 3008, beg = 2944, end = 3072, incorrect_part = 0.0
+vus = 3040, beg = 3008, end = 3072, incorrect_part = 0.05125051250512505
+vus = 3024, beg = 3008, end = 3040, incorrect_part = 0.0
+vus = 3032, beg = 3024, end = 3040, incorrect_part = 0.0
+vus = 3036, beg = 3032, end = 3040, incorrect_part = 0.009615384615384616
+vus = 3034, beg = 3032, end = 3036, incorrect_part = 0.0
+vus = 3035, beg = 3034, end = 3036, incorrect_part = 0.0

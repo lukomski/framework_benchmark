@@ -1,0 +1,10 @@
+{
+  "app": {
+    "url": "http://localhost:3000/member/",
+    "name": "nestjs"
+  },
+  "test_result_base_dir": "out",
+  "test_result_dir_prefix": "out_",
+  "script_path": "../../grafana-k6/script.js",
+  "vus": 1
+}

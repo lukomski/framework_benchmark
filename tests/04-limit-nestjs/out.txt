@@ -1,0 +1,34 @@
+
+-------------------------
+vus = 1, beg = 1, end = None, incorrect_part = 0.0
+vus = 2, beg = 1, end = None, incorrect_part = 0.0
+vus = 4, beg = 2, end = None, incorrect_part = 0.0
+vus = 8, beg = 4, end = None, incorrect_part = 0.0
+vus = 16, beg = 8, end = None, incorrect_part = 0.0
+vus = 32, beg = 16, end = None, incorrect_part = 0.0
+vus = 64, beg = 32, end = None, incorrect_part = 0.0
+vus = 128, beg = 64, end = None, incorrect_part = 0.0
+vus = 256, beg = 128, end = None, incorrect_part = 0.0
+vus = 512, beg = 256, end = None, incorrect_part = 0.0
+vus = 1024, beg = 512, end = None, incorrect_part = 0.0
+vus = 2048, beg = 1024, end = None, incorrect_part = 0.0
+vus = 4096, beg = 2048, end = None, incorrect_part = 0.0
+vus = 8192, beg = 4096, end = None, incorrect_part = 0.0
+vus = 16384, beg = 8192, end = None, incorrect_part = 0.0
+vus = 32768, beg = 16384, end = None, incorrect_part = 0.0
+vus = 65536, beg = 32768, end = None, incorrect_part = 0.07641655831900349
+vus = 49152, beg = 32768, end = 65536, incorrect_part = 0.112645492207536
+vus = 40960, beg = 32768, end = 49152, incorrect_part = 0.2807272727272727
+vus = 36864, beg = 32768, end = 40960, incorrect_part = 0.29597859781731706
+vus = 34816, beg = 32768, end = 36864, incorrect_part = 0.29346469179122103
+vus = 33792, beg = 32768, end = 34816, incorrect_part = 0.0
+vus = 34304, beg = 33792, end = 34816, incorrect_part = 0.18687244328746747
+vus = 34048, beg = 33792, end = 34304, incorrect_part = 0.6114899496367607
+vus = 33920, beg = 33792, end = 34048, incorrect_part = 0.0867577821456324
+vus = 33856, beg = 33792, end = 33920, incorrect_part = 0.0022322674256375916
+vus = 33824, beg = 33792, end = 33856, incorrect_part = 0.23589274484020353
+vus = 33808, beg = 33792, end = 33824, incorrect_part = 0.5722570169334261
+vus = 33800, beg = 33792, end = 33808, incorrect_part = 0.0
+vus = 33804, beg = 33800, end = 33808, incorrect_part = 0.04553826319182245
+vus = 33802, beg = 33800, end = 33804, incorrect_part = 0.05749082116951733
+vus = 33801, beg = 33800, end = 33802, incorrect_part = 0.008032905879506412

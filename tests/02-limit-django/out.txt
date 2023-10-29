@@ -55,3 +55,17 @@ vus = 3032, beg = 3024, end = 3040, incorrect_part = 0.0
 vus = 3036, beg = 3032, end = 3040, incorrect_part = 0.009615384615384616
 vus = 3034, beg = 3032, end = 3036, incorrect_part = 0.0
 vus = 3035, beg = 3034, end = 3036, incorrect_part = 0.0
+-------------------------
+vus = 2048, beg = 1, end = None, incorrect_part = 0.0
+vus = 4096, beg = 2048, end = None, incorrect_part = 0.41267517255804226
+vus = 3072, beg = 2048, end = 4096, incorrect_part = 0.0397212543554007
+vus = 2560, beg = 2048, end = 3072, incorrect_part = 0.0
+vus = 2816, beg = 2560, end = 3072, incorrect_part = 0.0
+vus = 2944, beg = 2816, end = 3072, incorrect_part = 0.0
+vus = 3008, beg = 2944, end = 3072, incorrect_part = 0.0
+vus = 3040, beg = 3008, end = 3072, incorrect_part = 0.0
+vus = 3056, beg = 3040, end = 3072, incorrect_part = 0.0
+vus = 3064, beg = 3056, end = 3072, incorrect_part = 0.04665629860031104
+vus = 3060, beg = 3056, end = 3064, incorrect_part = 0.0
+vus = 3062, beg = 3060, end = 3064, incorrect_part = 0.0
+vus = 3063, beg = 3062, end = 3064, incorrect_part = 0.00935093509350935

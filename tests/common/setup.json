@@ -5,7 +5,7 @@
       "name": "dotnet"
     },
     "django": {
-      "url": "http://localhost:8000/collisions/",
+      "url": "http://localhost:8000/blogs/",
       "name": "django"
     },
     "nestjs": {

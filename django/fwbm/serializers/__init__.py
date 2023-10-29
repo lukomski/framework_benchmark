@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
 from fwbm.serializers.collision import *
+from fwbm.serializers.blog import *
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:

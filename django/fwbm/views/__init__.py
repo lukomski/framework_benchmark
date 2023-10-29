@@ -3,6 +3,7 @@ from rest_framework import viewsets
 from rest_framework import permissions
 from fwbm.serializers import UserSerializer, GroupSerializer
 from fwbm.views.collision import *
+from fwbm.views.blog import *
 
 
 class UserViewSet(viewsets.ModelViewSet):

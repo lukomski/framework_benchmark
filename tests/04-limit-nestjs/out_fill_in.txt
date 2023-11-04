@@ -1,0 +1,25 @@
+
+-------------------------
+vus = 1, beg = 1, end = None, incorrect_part = nan
+vus = 2, beg = 1, end = None, incorrect_part = nan
+vus = 4, beg = 2, end = None, incorrect_part = 0.0
+vus = 8, beg = 4, end = None, incorrect_part = 0.0
+vus = 16, beg = 8, end = None, incorrect_part = 0.0
+vus = 32, beg = 16, end = None, incorrect_part = 0.0
+vus = 64, beg = 32, end = None, incorrect_part = 0.0
+vus = 128, beg = 64, end = None, incorrect_part = 0.0
+vus = 256, beg = 128, end = None, incorrect_part = nan
+vus = 512, beg = 256, end = None, incorrect_part = nan
+vus = 1024, beg = 512, end = None, incorrect_part = nan
+vus = 2048, beg = 1024, end = None, incorrect_part = nan
+vus = 4096, beg = 2048, end = None, incorrect_part = nan
+vus = 8192, beg = 4096, end = None, incorrect_part = nan
+-------------------------
+vus = 1, beg = 1, end = None, incorrect_part = nan
+vus = 2, beg = 1, end = None, incorrect_part = nan
+-------------------------
+vus = 1, beg = 1, end = None, incorrect_part = nan
+vus = 2, beg = 1, end = None, incorrect_part = nan
+vus = 4, beg = 2, end = None, incorrect_part = 0.0
+vus = 8, beg = 4, end = None, incorrect_part = 0.0
+Timeout - no winner

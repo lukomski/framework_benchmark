@@ -1,0 +1,20 @@
+
+-------------------------
+vus = 32768, beg = 1, end = None, incorrect_part = 0.0
+vus = 65536, beg = 32768, end = None, incorrect_part = 4.901240013723472e-05
+vus = 49152, beg = 32768, end = 65536, incorrect_part = 0.108255371645934
+vus = 40960, beg = 32768, end = 49152, incorrect_part = 0.0
+vus = 45056, beg = 40960, end = 49152, incorrect_part = 0.03435040514868375
+vus = 43008, beg = 40960, end = 45056, incorrect_part = 0.01832169698047761
+vus = 41984, beg = 40960, end = 43008, incorrect_part = 0.15366576700146012
+vus = 41472, beg = 40960, end = 41984, incorrect_part = 0.13521735943112675
+vus = 41216, beg = 40960, end = 41472, incorrect_part = 0.0
+vus = 41344, beg = 41216, end = 41472, incorrect_part = 0.0
+vus = 41408, beg = 41344, end = 41472, incorrect_part = 0.10171320652907055
+vus = 41376, beg = 41344, end = 41408, incorrect_part = 0.10436412873658994
+vus = 41360, beg = 41344, end = 41376, incorrect_part = 0.0
+vus = 41368, beg = 41360, end = 41376, incorrect_part = 0.0003851020520437916
+vus = 41364, beg = 41360, end = 41368, incorrect_part = 0.07874251497005988
+vus = 41362, beg = 41360, end = 41364, incorrect_part = 0.0
+vus = 41363, beg = 41362, end = 41364, incorrect_part = 0.019251155493363863
+Winner is vus = 4132

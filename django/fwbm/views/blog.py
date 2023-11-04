@@ -10,7 +10,8 @@ class BlogView(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['post', 'get'])
     def fill_in(self, request):
-        for idx in range(1000):
+        N = request.GET.get('N', 10)
+        for idx in range(int(N)):
             b = Blog(name=f'Some name {idx}', tagline='Some tagline {idx}')
             b.save()
         return Response({'Count of Blogs': Blog.objects.count()})

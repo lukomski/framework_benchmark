@@ -63,9 +63,9 @@ public class MemberController : ControllerBase
 
     [Route("fill-in")]
     [HttpPost]
-    public async Task<IActionResult> PostFillInAsync()
+    public async Task<IActionResult> PostFillInAsync(int N = 10)
     {
-        for (int index = 0; index < 1000; index++)
+        for (int index = 0; index < N; index++)
         {
             var member = new Member($"Name {index}");
             _gatherSyncContext.Members.Add(member);

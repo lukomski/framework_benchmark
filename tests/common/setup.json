@@ -2,15 +2,21 @@
   "apps": {
     "dotnet": {
       "url": "http://localhost:5029/Member/",
-      "name": "dotnet"
+      "name": "dotnet",
+      "clearUrl": "http://localhost:5029/Member/clear/",
+      "fillInUrl": "http://localhost:5029/Member/fill-in/"
     },
     "django": {
       "url": "http://localhost:8000/blogs/",
-      "name": "django"
+      "name": "django",
+      "clearUrl": "http://localhost:8000/blogs/clear/",
+      "fillInUrl": "http://localhost:8000/blogs/fill_in/" 
     },
     "nestjs": {
       "url": "http://localhost:3000/member/",
-      "name": "nestjs"
+      "name": "nestjs",
+      "clearUrl": "http://localhost:3000/member/clear/",
+      "fillInUrl": "http://localhost:3000/member/fill-in/"
     }
   },
   "test_result_base_dir": "out",

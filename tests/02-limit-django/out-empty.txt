@@ -1,0 +1,16 @@
+
+-------------------------
+vus = 2048, beg = 1, end = None, incorrect_part = 0.0
+vus = 4096, beg = 2048, end = None, incorrect_part = 0.5948966287949339
+vus = 3072, beg = 2048, end = 4096, incorrect_part = 0.0
+vus = 3584, beg = 3072, end = 4096, incorrect_part = 0.027552674230145867
+vus = 3328, beg = 3072, end = 3584, incorrect_part = 0.03150134048257373
+vus = 3200, beg = 3072, end = 3328, incorrect_part = 0.0180623973727422
+vus = 3136, beg = 3072, end = 3200, incorrect_part = 0.0
+vus = 3168, beg = 3136, end = 3200, incorrect_part = 0.02431222008957134
+vus = 3152, beg = 3136, end = 3168, incorrect_part = 0.0
+vus = 3160, beg = 3152, end = 3168, incorrect_part = 0.030204962243797196
+vus = 3156, beg = 3152, end = 3160, incorrect_part = 0.0
+vus = 3158, beg = 3156, end = 3160, incorrect_part = 0.0
+vus = 3159, beg = 3158, end = 3160, incorrect_part = 0.0
+Winner is vus = 3159

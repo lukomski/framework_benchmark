@@ -1,0 +1,16 @@
+
+-------------------------
+vus = 2048, beg = 1, end = None, incorrect_part = 0.0
+vus = 4096, beg = 2048, end = None, incorrect_part = 0.5727604377786786
+vus = 3072, beg = 2048, end = 4096, incorrect_part = 0.0
+vus = 3584, beg = 3072, end = 4096, incorrect_part = 0.036585365853658534
+vus = 3328, beg = 3072, end = 3584, incorrect_part = 0.04276315789473684
+vus = 3200, beg = 3072, end = 3328, incorrect_part = 0.12154031287605295
+vus = 3136, beg = 3072, end = 3200, incorrect_part = 0.04004711425206125
+vus = 3104, beg = 3072, end = 3136, incorrect_part = 0.0
+vus = 3120, beg = 3104, end = 3136, incorrect_part = 0.0
+vus = 3128, beg = 3120, end = 3136, incorrect_part = 0.09536423841059603
+vus = 3124, beg = 3120, end = 3128, incorrect_part = 0.24890190336749635
+vus = 3122, beg = 3120, end = 3124, incorrect_part = 0.0
+vus = 3123, beg = 3122, end = 3124, incorrect_part = 0.0
+Winner is 3123

@@ -36,4 +36,8 @@ export class MemberService {
   remove(id: number): Promise<DeleteResult> {
     return this.memberRepository.delete(id);
   }
+
+  removeAll(): Promise<void> {
+    return this.memberRepository.clear()
+  }
 }

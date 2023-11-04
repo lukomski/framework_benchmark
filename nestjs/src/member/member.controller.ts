@@ -31,4 +31,17 @@ export class MemberController {
   remove(@Param('id') id: string) {
     return this.memberService.remove(+id);
   }
+
+  @Post('clear')
+  clear() {
+    return this.memberService.removeAll();
+  }
+
+  @Post('fill-in')
+  fillIn() {
+    for (let i = 0; i < 1000; i++) {
+      this.memberService.create({name: `Name ${i}`});
+    }
+    return 'Ok'
+  }
 }

@@ -1,7 +1,8 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Query } from '@nestjs/common';
 import { MemberService } from './member.service';
 import { CreateMemberDto } from './dto/create-member.dto';
 import { UpdateMemberDto } from './dto/update-member.dto';
+import { ApiQuery } from '@nestjs/swagger';
 
 @Controller('member')
 export class MemberController {
@@ -38,8 +39,14 @@ export class MemberController {
   }
 
   @Post('fill-in')
-  fillIn() {
-    for (let i = 0; i < 1000; i++) {
+  @ApiQuery({
+    name: "N",
+    type: Number,
+    description: "Quantity of the entities to be added.",
+    required: false
+  })
+  fillIn(@Query('N') n: number = 10) {
+    for (let i = 0; i < n; i++) {
       this.memberService.create({name: `Name ${i}`});
     }
     return 'Ok'

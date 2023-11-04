@@ -51,4 +51,26 @@ public class MemberController : ControllerBase
         await _gatherSyncContext.SaveChangesAsync();
         return NoContent();
     }
+
+    [Route("clear")]
+    [HttpPost]
+    public async Task<IActionResult> PostClearAsync()
+    {
+        _gatherSyncContext.Members.RemoveRange(_gatherSyncContext.Members);
+         await _gatherSyncContext.SaveChangesAsync();
+        return Ok($"Count of Members: {_gatherSyncContext.Members.Count()}");
+    }
+
+    [Route("fill-in")]
+    [HttpPost]
+    public async Task<IActionResult> PostFillInAsync()
+    {
+        for (int index = 0; index < 1000; index++)
+        {
+            var member = new Member($"Name {index}");
+            _gatherSyncContext.Members.Add(member);
+        }       
+        await _gatherSyncContext.SaveChangesAsync();
+        return Ok($"Count of Members: {_gatherSyncContext.Members.Count()}");
+    }
 }

@@ -1,0 +1,17 @@
+
+-------------------------
+vus = 1, beg = 1, end = None, incorrect_part = 0.0
+vus = 2, beg = 1, end = None, incorrect_part = 0.0
+vus = 4, beg = 2, end = None, incorrect_part = 0.0
+vus = 8, beg = 4, end = None, incorrect_part = 0.0
+vus = 16, beg = 8, end = None, incorrect_part = 0.0
+vus = 32, beg = 16, end = None, incorrect_part = 0.0
+vus = 64, beg = 32, end = None, incorrect_part = 0.0
+vus = 128, beg = 64, end = None, incorrect_part = 0.7560975609756098
+vus = 96, beg = 64, end = 128, incorrect_part = 0.4
+vus = 80, beg = 64, end = 96, incorrect_part = 0.0
+vus = 88, beg = 80, end = 96, incorrect_part = 0.0
+vus = 92, beg = 88, end = 96, incorrect_part = 0.10526315789473684
+vus = 90, beg = 88, end = 92, incorrect_part = 0.0
+vus = 91, beg = 90, end = 92, incorrect_part = 0.010869565217391304
+Winner is vus = 90

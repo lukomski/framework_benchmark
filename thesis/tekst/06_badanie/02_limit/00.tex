@@ -1,1 +1,25 @@
 \section{Limity równoległych zapytań}
+
+
+\begin{tabular}{ | m{7em} | m{15em} | m{18em} | } 
+    \hline
+    Narzędzie & Liczba użytkowników (\textbf{FWB\_0}) & Liczba użytkowników (\textbf{FWB\_100K}) \\ 
+    \hline
+    Django & 3159 & 3070 \\ 
+    \hline
+    Dotnet & 14469 & 90 \\ 
+    \hline
+    NestJS & 4132 & 0 \\ 
+    \hline
+\end{tabular}
+\phantom
+\\
+
+Django potrafi obsługiwać podobną ilość użytkowników dla obu zbiorów. 
+W przypadku zbioru danych FWB\_100K, narzędzie zanotowało spadek o niecałe 3\%.
+
+Dotnet jest zdecydowanym liderem liczby użytkowników dla pustego zbioru. 
+Widać u niego jednak znaczny spadek liczby obsługiwanych użytkowników wraz ze wzrostem ilości przesyłanych danych.
+
+NestJS które przy zbiorze pustym jest nieco lepsze od Django, dla zbioru FWB\_100K całkowicie przestało odpowiadać - co oznacza, że nie radzi sobie z taką ilością danych.
+

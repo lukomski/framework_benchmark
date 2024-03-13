@@ -1,10 +1,4 @@
 # Frameworks benchmark
 
-
-### Run Django container
-```
-docker compose up --build
-```
-
-### Open browser
-http://localhost:8000
+## Master thesis (Work in progress) is available here:
+[Master thesis (WIP)](thesis/EE-dyplom.pdf)

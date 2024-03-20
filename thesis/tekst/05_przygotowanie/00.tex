@@ -1,0 +1,7 @@
+W celu przeprowadzenia badania nad wydajnością oraz porównaniem trzech różnych aplikacji serwujących podobne API, zdecydowano się na implementację trzech aplikacji w różnych technologiach: Django, .NET oraz NestJS.
+Każda z aplikacji została skonfigurowana do korzystania z bazy danych PostgreSQL.
+Całe środowisko, a więc aplikacja oraz baza danych, zostało uruchomione w kontenerach Docker w lokalnym środowisku.
+
+Po zakończeniu implementacji każdej z aplikacji, przygotowano kilka scenariuszy testowych, które miały być użyte do oceny wydajności każdej z aplikacji.
+Do przeprowadzenia testów wydajnościowych wykorzystano narzędzie Grafana k6, które umożliwiło monitorowanie i symulację obciążenia na aplikacji.
+Napisane zostały skrypty które uruchamiją test k6, a następnie analizują wyniki.

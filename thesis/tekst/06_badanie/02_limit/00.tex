@@ -1,19 +1,10 @@
 \section{Limity równoległych zapytań}
 
-
-\begin{tabular}{ | m{7em} | m{15em} | m{18em} | } 
-    \hline
-    Narzędzie & Liczba użytkowników (\textbf{FWB\_0}) & Liczba użytkowników (\textbf{FWB\_100K}) \\ 
-    \hline
-    Django & 3159 & 3070 \\ 
-    \hline
-    Dotnet & 14469 & 90 \\ 
-    \hline
-    NestJS & 4132 & 0 \\ 
-    \hline
-\end{tabular}
-\phantom
-\\
+\begin{figure}[!hb]
+	\centering \includegraphics[width=1\linewidth]{rysunki/Limit_vus_for_different_datasets.png}
+	\caption{Limit liczby użytkowników dla zwracajnych różnych wielkości danych dla jednej instacji frameworka}
+	\label{rys:limit_vus}
+\end{figure}
 
 Django potrafi obsługiwać podobną ilość użytkowników dla obu zbiorów.
 W przypadku zbioru danych FWB\_100K, narzędzie zanotowało spadek o niecałe 3\%.

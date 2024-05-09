@@ -815,7 +815,7 @@
     \printglossary[type=\acronymtype,title={}]
     \printglossary[type=symbols,title={}]
     % Alternatywna lista symboli - do użycia tylko w Overleaf
-    %\input{symbols}
+    % \input{symbols}
 }   %
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -57,4 +57,42 @@ Na samej górze są testy funkcjonalne, a więc kosztowne w utrzymaniu.
 Sposób podziału testów jest umowny więc wszystkie niewymienione rodzaje testów również znajdują się w piramidzie obok najbliższego rodzaju testów.
 
 
-% W niniejszej pracy testy przeprowadzone przynależą do kategorii testów wydajnościowych. 
+W niniejszej pracy testy przeprowadzone przynależą do kategorii testów wydajnościowych.
+Są to kluczowe testy zapewniające o jednym z istotnych aspektów dobrze działającego oprogramowania.
+Ich zadaniem jest identyfikacja obszarów ryzyka zachowania w czasie, wykorzystania zasobów, przepustowości \cite{testerzyTestowanieWydajnoci}.
+
+\begin{figure}[!hb]
+	\centering \includegraphics[width=1\linewidth]{rysunki/performance-tests.png}
+	\caption{Typy testów wydajnościowych}
+	\label{rys:performance-tests}
+\end{figure}
+
+Typy testów wydajnościowych zostały zaprezentowane na rysunku \ref{rys:performance-tests}.
+
+Testowanie obciążenia to badanie zdolności systmu do obsługi wzrastającego obciążenia przy realistycznych, przywidywanych ilościach aktorów mających interakcje z systemem.
+
+Testowanie przeciążające to badanie realizowane przy danych przekraczających realistyczne obciążenie. 
+Ma ono na celu znalezienie granicy.
+
+Testowanie skalowalności polega na zbadaniu granic funkcjonowania systemu przy zachowaniu większości pierwotnych założeń.
+Pozwala ono na monitorowanie i wczesne reagowanie gdy nasz system wraz z rozwojem stopniowo przekracza wytyczone wymagania.
+
+Testowanie skokowe bada reagowanie systemy na nagły, chwilowy wzrost obciążenia.
+System powinien być w stanie wrócić no normalnego funkcjonowania, gdy obciążenie wróci do początkowego stanu.
+
+Testowanie wytrzymałościowe skupia się na ocenie działania systemy w dłuższym okresie spracyficznym dla rozwiązania.
+Skupia się na drobnych niedokładnościach, które wraz z czasem działania mogą urosnąć do rangi poważnych błędów.
+Mogą to być błędy obliczeń związane z zaokrąglaniem lub wycieki pamięci.
+
+Testowanie współbierzności sprawdza czy system działa poprawnie w przypadku przeprowadzania równoległych operacji.
+Jestem to zazwyczaj trudny obszar do badania.
+
+Testowanie przepustowości ocenia granice gdy system przestaje działać zgodnie z wymaganiami przy zwiekszonej liczbie aktorów mających interakcje z systemem.
+
+Od innej strony można podzielić na testowanie statyczne oraz dynamiczne.
+Testowanie statyczne wiąże się ze sprawdzeniem wymagań, architektury rozwiązania w celu znalezienia wąskiego gardła.
+Czasami oznacza to również sprawdzenie używanych algorytmów.
+Jest to bardzo ważna weryfikacja, ponieważ może zostać zrobiona w początkowej fazie projektu.
+Poprawa problemu we wczesnej fazie zazwyczaj sprawia że jest on zdecydowanie mniej kosztowny.
+Testowanie dynamiczne to testy jednostkowe, integracyjne, akceptacyjne, które zazwyczaj powstają wraz z rozwojem systemu.
+Ich celem jest zwrócenie uwagi na problem niedostrzeżony w fazie testowania statycznego.

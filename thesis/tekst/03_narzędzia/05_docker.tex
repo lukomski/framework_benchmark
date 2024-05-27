@@ -6,9 +6,19 @@ Docker wykorzystuje technologię konteneryzacji, co pozwala na przenośność ap
 
 Jedną z kluczowych cech Dockera jest jego szybkość oraz lekkość.
 Kontenery są uruchamiane na poziomie systemu operacyjnego gospodarza, co eliminuje narzut związany z wirtualizacją tradycyjną.
+Porównianie architektury maszyny wirtualnej oraz docker zostało zaprezentowane na rysunku \ref{rys:docker-vs-vm}.
+
+\begin{figure}[!hb]
+	\centering \includegraphics[width=1\linewidth]{rysunki/docker-vs-vm.jpg}
+	\caption{Schemat porównujący koncepcję maszyny wirtualnej oraz dockera - źródło \cite{cherryserversOverview}}
+	\label{rys:docker-vs-vm}
+\end{figure}
+
 Dzięki temu aplikacje uruchomione w kontenerach Docker są bardzo wydajne i mogą być łatwo skalowane w zależności od obciążenia.
+Maszyna wirtualna dockerowa jest nie ma narzutu systemowego na sobie, stąd więcej takich maszyn można uruchmić na raz.
 
 Docker jest również popularnym narzędziem w środowiskach deweloperskich oraz produkcyjnych.
 Pozwala on programistom tworzyć odizolowane środowiska programistyczne, co ułatwia testowanie oraz debugowanie aplikacji.
 Jest powszechnie stosowany w procesie wdrażania aplikacji, umożliwiając szybkie i spójne wdrożenie aplikacji na różne serwery oraz platformy chmurowe.
 Dzięki wsparciu dla narzędzi takich jak Kubernetes czy Docker Swarm, Docker jest używany do budowy i zarządzania dużymi klastrami kontenerów, co umożliwia elastyczne i skalowalne wdrożenia aplikacji w różnych środowiskach produkcyjnych.
+

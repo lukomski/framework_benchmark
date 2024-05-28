@@ -9,6 +9,21 @@ Dowolny fragment arkusz może zostać uruchmiony powtórnie.
 Jest to również dogodne środowisko do przeglądania danych oraz ich rysowania.
 Kroki badania zostały zaprezentowane na rysunku \ref{rys:test_flow}.
 
+\begin{center}
+	\begin{table}[h!]
+	\begin{tabular}{ |c|c|c|c| } 
+		\hline
+		\textbf{Framework} & \textbf{środowisko uruchomieniowe} & \textbf{ORM} & \textbf{Baza danych} \\ 
+		NestJS 10 & Node 18 & TypeORM 0.3.17 & PostgreSQL \\
+		ASP.NET Core 7 & .NET 7.0 & EF Core 7 & PostgreSQL \\ 
+		Django 4.2 & Python python 3.11 & Django ORM 4.2 & PostgreSQL \\
+		\hline
+	\end{tabular}
+	\caption{Wersje badanych narzędzi}
+	\label{table:version}
+	\end{table}
+\end{center}
+
 
 \begin{figure}[!hb]
 	\centering \includegraphics[width=1\linewidth]{rysunki/test_flow.png}
@@ -25,4 +40,10 @@ Napisane zostały skrypty które uruchamiją test k6, a następnie analizują wy
 	\caption{Schemat środowiska badawczego}
 	\label{rys:docker_schema}
 \end{figure}
+
+
+
+Testowane wersje narzędzi zostały przedstawione w tabeli \ref{table:version}.
+
+
 

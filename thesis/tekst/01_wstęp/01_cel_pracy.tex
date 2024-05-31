@@ -2,22 +2,23 @@
 
 Praca ta dokonuje analizy porównawczej trzech wybranych frameworków serwujących dane.
 Pod uwagę został wzięty aspekt czasu odpowiedzi przy róznych warunkach.
-Badanie ma na celu wzkazać mocne oraz słabsze strony każdego z porównywanych narzędzi.
+Badanie ma na celu wskazać mocne oraz słabsze strony każdego z porównywanych narzędzi.
 Badany jest wycinek rzeczywistości, którego istoną częścią jest różnica.
 Bezwględne wartości mogą się różnić w zależności od warunków uruchomienia, natomiast relacje między badanymi obiektami powinny być stale zauważalne.
 
 
-Testy można dzielić na rodzaje pod różnymi względami. Podstawowy poział testów został zaprezentowny na rysynku \ref{rys:test-types}\cite{atlassianRneRodzaje}.
+Testy można dzielić na rodzaje pod różnymi względami. Podstawowy podział testów został zaprezentowny na rysynku \ref{rys:test-types}\cite{atlassianRneRodzaje}.
 \begin{figure}[!hb]
 	\centering \includegraphics[width=1\linewidth]{rysunki/test-types.png}
 	\caption{Rodzaje testów}
 	\label{rys:test-types}
 \end{figure}
-Testy jednostkowe są testami pisanymi na stosunkowo niskim poziomie. Nie jest jednoznaczne czym jest jednostka która jest testowana.
-Czasami jest to jedna funkcja, czasem jeden modół.
+Testy jednostkowe są testami pisanymi na stosunkowo niskim poziomie.
+Nie jest jednoznacznie zdefiniowane czym jest jednostka która jest testowana.
+Czasami jest to jedna funkcja, czasem jeden moduł.
 Wszystko zależy od kontekstu badanego rozwiązania.
 Charakteryzują się szybkością działania.
-Nie potrzebna jest rozbudowana infrastruktura.
+Nie jest potrzebna rozbudowana infrastruktura.
 Dzięki temu można je uruchamiać często.
 
 Kolejnymi testami na wyższym poziomie są testy integracyjne.
@@ -32,7 +33,7 @@ Dziedziną badania jest sprawdzenie czy kluczowe elementy funkcjonalności są z
 Kompleksowe testy badają całą aplikację.
 Testy te wymagają postawienia całego systemu w celu jego przetestowania.
 Z powodu ich kosztowności zaleca się ograniczenie ilości tych testów do minimalnej liczby.
-Posiadanie ich nejlepiej weryfikuje czy badana aplikacja działa.
+Posiadanie ich najlepiej weryfikuje czy badana aplikacja działa.
 
 Testy akceptacyjne weryfikują czy kluczowe wymagania biznesowe są zrealizowane.
 Wymagają postawienia całej aplikacji przez co są kosztowne.
@@ -42,7 +43,7 @@ Polegają na pobieżnym przejściu przez dowolny fragment systemu.
 Jest to szybka weryfikacja czy podstawowy element systemu działa jak powinien.
 
 Testy wydajnościowe sprawdzają czy w wymaganym obciążeniu aplikacja zachowuje się poprawnie.
-Pomagaja znaleźć wąskie gardła systmu i zapobiec przerwie działania w przypadku wzrostu obłsugiwanych użytkowników lub zwiększenia ilości przetważanych danych,
+Pomagaja znaleźć wąskie gardła systemu i zapobiec przerwie działania w przypadku wzrostu obsługiwanych użytkowników lub zwiększenia ilości przetważanych danych,
 
 Wraz z wchodzeniem na wyższy poziom testowania koszty testów rosną \cite{testerzyPiramidaTestw}.
 Stąd istnieje piramida testów prezentująca zaleźność liczby testów w zależności od rodzajów.
@@ -53,13 +54,13 @@ Piramida ta została zaprezentowana na rysunku \ref{rys:test-pyramid}.
 	\label{rys:test-pyramid}
 \end{figure}
 Testy jednostkowe są na najniższym poziomie piramidy, a więc tego rodzaju testów powinno być najwięcej jako, że testy te są tanie w utrzymaniu.
-Na samej górze są testy funkcjonalne, a więc kosztowne w utrzymaniu.
+Wraz z wzrostem wysokości piramidy, koszt utrzymania oraz uruchomienia testów rośnie.
 Sposób podziału testów jest umowny więc wszystkie niewymienione rodzaje testów również znajdują się w piramidzie obok najbliższego rodzaju testów.
 
 
 W niniejszej pracy testy przeprowadzone przynależą do kategorii testów wydajnościowych.
 Są to kluczowe testy zapewniające o jednym z istotnych aspektów dobrze działającego oprogramowania.
-Ich zadaniem jest identyfikacja obszarów ryzyka zachowania w czasie, wykorzystania zasobów, przepustowości \cite{testerzyTestowanieWydajnoci}.
+Ich zadaniem jest identyfikacja obszarów ryzyka zachowania w czasie, wykorzystania zasobów oraz przepustowości \cite{testerzyTestowanieWydajnoci}.
 
 \begin{figure}[!hb]
 	\centering \includegraphics[width=1\linewidth]{rysunki/performance-tests.png}
@@ -69,7 +70,7 @@ Ich zadaniem jest identyfikacja obszarów ryzyka zachowania w czasie, wykorzysta
 
 Typy testów wydajnościowych zostały zaprezentowane na rysunku \ref{rys:performance-tests}.
 
-Testowanie obciążenia to badanie zdolności systmu do obsługi wzrastającego obciążenia przy realistycznych, przywidywanych ilościach aktorów mających interakcje z systemem.
+Testowanie obciążenia to badanie zdolności systemu do obsługi wzrastającego obciążenia przy realistycznych, przywidywanych ilościach aktorów mających interakcje z systemem.
 
 Testowanie przeciążające to badanie realizowane przy danych przekraczających realistyczne obciążenie. 
 Ma ono na celu znalezienie granicy.
@@ -84,7 +85,7 @@ Testowanie wytrzymałościowe skupia się na ocenie działania systemy w dłużs
 Skupia się na drobnych niedokładnościach, które wraz z czasem działania mogą urosnąć do rangi poważnych błędów.
 Mogą to być błędy obliczeń związane z zaokrąglaniem lub wycieki pamięci.
 
-Testowanie współbierzności sprawdza czy system działa poprawnie w przypadku przeprowadzania równoległych operacji.
+Testowanie współbieżności sprawdza czy system działa poprawnie w przypadku przeprowadzania równoległych operacji.
 Jestem to zazwyczaj trudny obszar do badania.
 
 Testowanie przepustowości ocenia granice gdy system przestaje działać zgodnie z wymaganiami przy zwiekszonej liczbie aktorów mających interakcje z systemem.

@@ -2,8 +2,8 @@
 
 Coraz częściej aplikacje są sprzedawane jako serwisy dostępne w chmurze \cite{horizontalArchitecture}.
 Pozwala to skalowanie rozwiązań w zależności od zapotrzebowania.
-Proste aplikacje piesze się w architekturze wertykalnej, co oznacza, że istnieje jednak instancja aplikacji, która wykonuje wymagane operacje.
-W przypadku wzrostu zapotrzebowania na moc obliczeniową, można zaopatrywać się maszynę spełniającą oczekiwane wymagania.
+Proste aplikacje pisze się w architekturze wertykalnej, co oznacza, że istnieje jedna instancja aplikacji, która wykonuje wymagane operacje.
+W przypadku wzrostu zapotrzebowania na moc obliczeniową, można zaopatrzyć się maszynę spełniającą oczekiwane wymagania.
 Schemat architektury wertykalnej został zaprezentowany na rysynku \ref{rys:veriticalArchitecture}.
 Takie rozwiązanie jest mało elastyczne na wahania potrzebnej mocy obliczeniowej.
 Podmiana instancji wymaga zatrzymania chociaż na chwilę działania usługi.
@@ -18,7 +18,7 @@ Utrzymywanie urządzenia o dużej mocy obliczeniowej, tylko po to wytrzymało po
 
 Aby rozwiązać ten problem stosuje się architekturę horyzontalną.
 Schemat architektury horyzontalnej został zaprezentowany na rysynku \ref{rys:horizontalArchitecture}.
-Pośrednikiem komunikacji użytkownika z aplikacją jest urządzenie które przydziela instancję aplikacji użytkonikowi, tak, że z perspektywy użytkonika stale jest jedna aplikacja, natomiast może być uruchomionych wiele w zależności od zapotrzebowania aplikacji.
+Pośrednikiem komunikacji użytkownika z aplikacją jest urządzenie które przydziela instancję aplikacji użytkownikowi, tak, że z perspektywy użytkonika stale jest jedna aplikacja, natomiast może być uruchomionych wiele instancji w zależności od zapotrzebowania.
 Kiedy ruch jest bardzo mały jedna aplikacji może być uruchomiona.
 Wraz ze wzrostem obciążenia mogą być dynamicznie uruchamiane kolejne instancje aplikacji.
 Jest to możliwe dzięki środowisku chmurowemu, gdzie uruchomienie kolejnej instancji aplikacji nie wymaga postawienia kolejnego urządzenia fizycznego.

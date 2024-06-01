@@ -1,0 +1,30 @@
+{
+  "apps": {
+    "dotnet": {
+      "url": "http://localhost:5029/Member/",
+      "name": ".NET",
+      "clearUrl": "http://localhost:5029/Member/clear/",
+      "fillInUrl": "http://localhost:5029/Member/fill-in/",
+      "patch": 1000
+    },
+    "django": {
+      "url": "http://localhost:8000/blogs/",
+      "name": "Django",
+      "clearUrl": "http://localhost:8000/blogs/clear/",
+      "fillInUrl": "http://localhost:8000/blogs/fill_in/",
+      "patch": 500
+    },
+    "nestjs": {
+      "url": "http://localhost:3000/member/",
+      "name": "NestJS",
+      "clearUrl": "http://localhost:3000/member/clear/",
+      "fillInUrl": "http://localhost:3000/member/fill-in/",
+      "patch": 1000
+    }
+  },
+  "test_result_base_dir": "out",
+  "test_result_dir_prefix": "out_",
+  "script_path": "../../grafana-k6/script.js",
+  "vus": 1,
+  "fill_in_quantity": 100000
+}

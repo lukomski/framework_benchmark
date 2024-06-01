@@ -1,0 +1,42 @@
+
+-------------------------
+vus = 2048, beg = 1, end = None, incorrect_part = 0.0
+vus = 4096, beg = 2048, end = None, incorrect_part = 1.0
+vus = 3072, beg = 2048, end = 4096, incorrect_part = nan
+vus = 3584, beg = 3072, end = 4096, incorrect_part = 1.0
+vus = 3328, beg = 3072, end = 3584, incorrect_part = 1.0
+vus = 3200, beg = 3072, end = 3328, incorrect_part = nan
+-------------------------
+vus = 2048, beg = 1, end = None, incorrect_part = 0.0
+vus = 4096, beg = 2048, end = None, incorrect_part = 1.0
+vus = 3072, beg = 2048, end = 4096, incorrect_part = 1.0
+vus = 2560, beg = 2048, end = 3072, incorrect_part = 1.0
+vus = 2304, beg = 2048, end = 2560, incorrect_part = nan
+vus = 2432, beg = 2304, end = 2560, incorrect_part = nan
+-------------------------
+vus = 2048, beg = 1, end = 2560, incorrect_part = 0.0
+vus = 2304, beg = 2048, end = 2560, incorrect_part = nan
+vus = 2176, beg = 2048, end = 2304, incorrect_part = 1.0
+vus = 2112, beg = 2048, end = 2176, incorrect_part = nan
+vus = 2080, beg = 2048, end = 2112, incorrect_part = nan
+vus = 2064, beg = 2048, end = 2080, incorrect_part = nan
+vus = 2056, beg = 2048, end = 2064, incorrect_part = nan
+vus = 2052, beg = 2048, end = 2056, incorrect_part = nan
+-------------------------
+vus = 2049, beg = 1, end = 2176, incorrect_part = 0.0
+vus = 2112, beg = 2049, end = 2176, incorrect_part = nan
+vus = 2080, beg = 2049, end = 2112, incorrect_part = nan
+-------------------------
+vus = 2050, beg = 1, end = 2112, incorrect_part = 0.0
+vus = 2081, beg = 2050, end = 2112, incorrect_part = nan
+vus = 2065, beg = 2050, end = 2081, incorrect_part = nan
+-------------------------
+vus = 2051, beg = 1, end = 2080, incorrect_part = 0.0
+vus = 2065, beg = 2051, end = 2080, incorrect_part = nan
+vus = 2058, beg = 2051, end = 2065, incorrect_part = nan
+vus = 2054, beg = 2051, end = 2058, incorrect_part = nan
+vus = 2052, beg = 2051, end = 2054, incorrect_part = 1.0
+-------------------------
+vus = 2052, beg = 1, end = 2054, incorrect_part = 0.0
+vus = 2053, beg = 2052, end = 2054, incorrect_part = nan
+Winner is 2052

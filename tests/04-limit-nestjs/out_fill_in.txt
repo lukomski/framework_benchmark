@@ -23,3 +23,91 @@ vus = 2, beg = 1, end = None, incorrect_part = nan
 vus = 4, beg = 2, end = None, incorrect_part = 0.0
 vus = 8, beg = 4, end = None, incorrect_part = 0.0
 Timeout - no winner
+-------------------------
+vus = 1, beg = 1, end = None, incorrect_part = nan
+vus = 2, beg = 1, end = None, incorrect_part = nan
+vus = 4, beg = 2, end = None, incorrect_part = 0.0
+vus = 8, beg = 4, end = None, incorrect_part = 0.0
+vus = 16, beg = 8, end = None, incorrect_part = 0.0
+vus = 32, beg = 16, end = None, incorrect_part = 0.0
+------------
+2024-06-01 16:08:54
+------------
+
+-------------------------
+vus = 1, beg = 1, end = None, incorrect_part = 0.0
+vus = 2, beg = 1, end = None, incorrect_part = 0.0
+vus = 4, beg = 2, end = None, incorrect_part = 0.0
+vus = 8, beg = 4, end = None, incorrect_part = 0.0
+vus = 16, beg = 8, end = None, incorrect_part = 0.0
+vus = 32, beg = 16, end = None, incorrect_part = 0.0
+vus = 64, beg = 32, end = None, incorrect_part = 0.0
+vus = 128, beg = 64, end = None, incorrect_part = 0.0
+vus = 256, beg = 128, end = None, incorrect_part = nan
+vus = 512, beg = 256, end = None, incorrect_part = nan
+vus = 1024, beg = 512, end = None, incorrect_part = nan
+vus = 2048, beg = 1024, end = None, incorrect_part = nan
+vus = 4096, beg = 2048, end = None, incorrect_part = nan
+vus = 8192, beg = 4096, end = None, incorrect_part = nan
+vus = 16384, beg = 8192, end = None, incorrect_part = 1.0
+vus = 12288, beg = 8192, end = 16384, incorrect_part = nan
+vus = 14336, beg = 12288, end = 16384, incorrect_part = 1.0
+vus = 13312, beg = 12288, end = 14336, incorrect_part = 1.0
+vus = 12800, beg = 12288, end = 13312, incorrect_part = 1.0
+vus = 12544, beg = 12288, end = 12800, incorrect_part = 1.0
+vus = 12416, beg = 12288, end = 12544, incorrect_part = 1.0
+vus = 12352, beg = 12288, end = 12416, incorrect_part = 1.0
+vus = 12320, beg = 12288, end = 12352, incorrect_part = 1.0
+vus = 12304, beg = 12288, end = 12320, incorrect_part = 1.0
+vus = 12296, beg = 12288, end = 12304, incorrect_part = 1.0
+-------------------------
+vus = 128, beg = 1, end = None, incorrect_part = nan
+vus = 256, beg = 128, end = None, incorrect_part = nan
+-------------------------
+vus = 64, beg = 1, end = None, incorrect_part = 0.0
+vus = 128, beg = 64, end = None, incorrect_part = 0.0
+vus = 256, beg = 128, end = None, incorrect_part = nan
+vus = 512, beg = 256, end = None, incorrect_part = nan
+vus = 1024, beg = 512, end = None, incorrect_part = nan
+-------------------------
+vus = 64, beg = 1, end = 256, incorrect_part = 0.0
+vus = 160, beg = 64, end = 256, incorrect_part = 0.0
+vus = 208, beg = 160, end = 256, incorrect_part = nan
+vus = 232, beg = 208, end = 256, incorrect_part = nan
+-------------------------
+vus = 161, beg = 1, end = 208, incorrect_part = 0.0
+vus = 184, beg = 161, end = 208, incorrect_part = nan
+vus = 196, beg = 184, end = 208, incorrect_part = nan
+vus = 202, beg = 196, end = 208, incorrect_part = 1.0
+-------------------------
+vus = 162, beg = 1, end = 184, incorrect_part = 0.0
+vus = 173, beg = 162, end = 184, incorrect_part = nan
+-------------------------
+vus = 163, beg = 1, end = 173, incorrect_part = 0.0
+vus = 168, beg = 163, end = 173, incorrect_part = nan
+-------------------------
+vus = 164, beg = 1, end = 168, incorrect_part = 0.0
+vus = 166, beg = 164, end = 168, incorrect_part = nan
+-------------------------
+vus = 164, beg = 1, end = 166, incorrect_part = 0.0
+vus = 165, beg = 164, end = 166, incorrect_part = nan
+-------------------------
+-------------------------
+vus = 165, beg = 1, end = 166, incorrect_part = 0.0
+-------------------------
+vus = 166, beg = 1, end = 167, incorrect_part = nan
+-------------------------
+vus = 165, beg = 1, end = 166, incorrect_part = 0.0
+-------------------------
+vus = 165, beg = 1, end = 166, incorrect_part = nan
+-------------------------
+vus = 164, beg = 1, end = 165, incorrect_part = 0.0
+-------------------------
+vus = 164, beg = 1, end = 165, incorrect_part = nan
+-------------------------
+vus = 163, beg = 1, end = 164, incorrect_part = 0.0
+-------------------------
+vus = 163, beg = 1, end = 164, incorrect_part = 0.0
+-------------------------
+vus = 163, beg = 1, end = 164, incorrect_part = nan
+Winner is 165

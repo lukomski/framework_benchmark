@@ -15,3 +15,14 @@ vus = 92, beg = 88, end = 96, incorrect_part = 0.10526315789473684
 vus = 90, beg = 88, end = 92, incorrect_part = 0.0
 vus = 91, beg = 90, end = 92, incorrect_part = 0.010869565217391304
 Winner is vus = 90
+-------------------------
+vus = 64, beg = 1, end = None, incorrect_part = 1.0
+-------------------------
+vus = 64, beg = 1, end = None, incorrect_part = 0.19642857142857142
+vus = 32, beg = 1, end = 64, incorrect_part = 0.0
+vus = 48, beg = 32, end = 64, incorrect_part = 0.0
+vus = 56, beg = 48, end = 64, incorrect_part = 0.0
+vus = 60, beg = 56, end = 64, incorrect_part = 0.0
+vus = 62, beg = 60, end = 64, incorrect_part = 0.02247191011235955
+vus = 61, beg = 60, end = 62, incorrect_part = 0.0
+Winner is 61

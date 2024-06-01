@@ -3,7 +3,8 @@
     "url": "http://localhost:3000/member/",
     "name": "nestjs",
     "clearUrl": "http://localhost:3000/member/clear/",
-    "fillInUrl": "http://localhost:3000/member/fill-in/"
+    "fillInUrl": "http://localhost:3000/member/fill-in/",
+    "patch": 1000
   },
   "test_result_base_dir": "out",
   "test_result_dir_prefix": "out_",

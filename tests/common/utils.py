@@ -1,11 +1,11 @@
 import json
 import os
 
-def get_last_result_dir(setup_data: dict):
+def get_last_result_dir(test_result_base_dir: str):
     '''
     Returns last loaded directory.
     '''
-    dirs = [x[0] for x in os.walk(f'{setup_data["test_result_base_dir"]}')]
+    dirs = [x[0] for x in os.walk(test_result_base_dir)]
     dirs.sort()
     return dirs[-1]
 

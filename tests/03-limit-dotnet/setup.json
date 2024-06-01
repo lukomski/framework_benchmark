@@ -3,7 +3,8 @@
     "url": "http://localhost:5029/Member/",
     "name": "dotnet",
     "clearUrl": "http://localhost:5029/Member/clear/",
-    "fillInUrl": "http://localhost:5029/Member/fill-in/"
+    "fillInUrl": "http://localhost:5029/Member/fill-in/",
+    "patch": 1000
   },
   "test_result_base_dir": "out",
   "test_result_dir_prefix": "out_",

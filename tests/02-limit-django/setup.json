@@ -1,9 +1,10 @@
 {
   "app": {
-    "url": "http://localhost:8000/collisions/",
+    "url": "http://localhost:8000/blogs/",
     "name": "django",
     "clearUrl": "http://localhost:8000/blogs/clear/",
-    "fillInUrl": "http://localhost:8000/blogs/fill_in/" 
+    "fillInUrl": "http://localhost:8000/blogs/fill_in/",
+    "patch": 500
   },
   "test_result_base_dir": "out",
   "test_result_dir_prefix": "out_",

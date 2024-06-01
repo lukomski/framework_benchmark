@@ -18,3 +18,34 @@ vus = 41364, beg = 41360, end = 41368, incorrect_part = 0.07874251497005988
 vus = 41362, beg = 41360, end = 41364, incorrect_part = 0.0
 vus = 41363, beg = 41362, end = 41364, incorrect_part = 0.019251155493363863
 Winner is vus = 4132
+-------------------------
+vus = 32768, beg = 1, end = None, incorrect_part = 0.0
+vus = 65536, beg = 32768, end = None, incorrect_part = 0.0
+vus = 131072, beg = 65536, end = None, incorrect_part = nan
+vus = 98304, beg = 65536, end = 131072, incorrect_part = 0.0
+vus = 114688, beg = 98304, end = 131072, incorrect_part = 0.0
+-------------------------
+vus = 114688, beg = 1, end = 131072, incorrect_part = 0.0
+vus = 122880, beg = 114688, end = 131072, incorrect_part = 0.0
+vus = 126976, beg = 122880, end = 131072, incorrect_part = 0.0
+vus = 129024, beg = 126976, end = 131072, incorrect_part = 0.0
+vus = 130048, beg = 129024, end = 131072, incorrect_part = 0.0
+vus = 130560, beg = 130048, end = 131072, incorrect_part = 0.0
+vus = 130816, beg = 130560, end = 131072, incorrect_part = 0.0
+vus = 130944, beg = 130816, end = 131072, incorrect_part = 0.0
+vus = 131008, beg = 130944, end = 131072, incorrect_part = 0.0
+vus = 131040, beg = 131008, end = 131072, incorrect_part = 0.0
+vus = 131056, beg = 131040, end = 131072, incorrect_part = 0.0
+vus = 131064, beg = 131056, end = 131072, incorrect_part = 0.0
+vus = 131068, beg = 131064, end = 131072, incorrect_part = 0.0
+vus = 131070, beg = 131068, end = 131072, incorrect_part = 0.5452693526482572
+-------------------------
+vus = 131068, beg = 1, end = None, incorrect_part = 0.0012832263978001834
+vus = 65534, beg = 1, end = 131068, incorrect_part = 0.0
+vus = 98301, beg = 65534, end = 131068, incorrect_part = 0.0
+vus = 114684, beg = 98301, end = 131068, incorrect_part = 0.01663263781684179
+vus = 106492, beg = 98301, end = 114684, incorrect_part = 0.06976253743304231
+vus = 102396, beg = 98301, end = 106492, incorrect_part = 0.09507358856656098
+vus = 100348, beg = 98301, end = 102396, incorrect_part = 0.06270878721859113
+vus = 99324, beg = 98301, end = 100348, incorrect_part = 0.49339465259930565
+Winner 131068

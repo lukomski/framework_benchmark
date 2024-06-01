@@ -16,3 +16,20 @@ vus = 14468, beg = 14464, end = 14472, incorrect_part = 0.0
 vus = 14470, beg = 14468, end = 14472, incorrect_part = 0.02333386100997309
 vus = 14469, beg = 14468, end = 14470, incorrect_part = 0.17017874478898978
 Winner is vus = 14469
+-------------------------
+vus = 8192, beg = 1, end = None, incorrect_part = 0.0
+vus = 16384, beg = 8192, end = None, incorrect_part = 0.0010437007608915224
+vus = 12288, beg = 8192, end = 16384, incorrect_part = 0.030496546331291542
+vus = 10240, beg = 8192, end = 12288, incorrect_part = 0.0200965335673541
+vus = 9216, beg = 8192, end = 10240, incorrect_part = 0.0
+vus = 9728, beg = 9216, end = 10240, incorrect_part = 0.0
+vus = 9984, beg = 9728, end = 10240, incorrect_part = 0.0
+vus = 10112, beg = 9984, end = 10240, incorrect_part = 0.0
+vus = 10176, beg = 10112, end = 10240, incorrect_part = 0.0
+vus = 10208, beg = 10176, end = 10240, incorrect_part = 0.0
+vus = 10224, beg = 10208, end = 10240, incorrect_part = 0.0
+vus = 10232, beg = 10224, end = 10240, incorrect_part = 0.0
+vus = 10236, beg = 10232, end = 10240, incorrect_part = 0.0
+vus = 10238, beg = 10236, end = 10240, incorrect_part = 0.0
+vus = 10239, beg = 10238, end = 10240, incorrect_part = 0.0
+Winner is 10239

@@ -1,18 +1,14 @@
-Badanie pojedyńczego zapytania wskazało że Django jest ponad 4 razy wolniejszy od frameworka .NET oraz prawie 3 razy wolniejszy od NestJS.
-Badanie limitów wskazało istotną słabość NestJS polegającą na tym, że nie był w stanie zwrócić 100 tysięcy rekordów. 
-.NET wykazał się 160-krotnym spadkiem liczby obsługiwanych uzytkowników przy więszej ilości zwracanych danych.
-Dla Django duże zbiory danych spowodowały zmniejszenie liczby obsugiwanych użytkowników o niecałe 3\%.
+Badanie szeregowych zapytań zarówno dla zbioru FWB\_0 jak i FWB\_100K wykazało Django jako framework wykazujący się kilku lub kilkunatu-kronie dłuższym czasem odpowiedzi.
+Z drugiej strony podczas bania limitu użytkowników wykazał się dużą odpornością na wzrost liczby użytkowników przy obsłudze więszego zbioru danych.
 
-Wybór narzędzia jest uzależniony od konkretnego zastosowania.
-Bardzo często istotny jest czas pojedyńczego zapytania, ponieważ wpływa mocno na doświadczenie użytkownika z korzystania z aplikacji.
-Uznając to za istotny czynnik należy odrzucić framework Django jak prezentujący się jako najwolniejszy na tle innych badanych rozwiązań.
+W testach równoległych zapytań NestJS oraz .NET wypadają na podobnym poziomie z konsekwentną przewagą .NET.
+NestJS wykazuje się kilkunasto-krotnie wyższym limitem obsługiwanych użytkowników dla zwracanego zbioru FWB\_0.
+Dla zbioru FWB\_100K nadal limit jest dwukrotnie wyższy od .NET.
 
-Rzadko wymagane jest przesyłanie dużych ilości danych przez API frameworka.
-Należy zaznaczyć, że do przesyłania plików, a więc potencjalnie więszych danch są osobne rozwiązania, kóre nie zostały zastosowane podczas badania.
-Zazwyczaj takie dane są przesyłane porcjami.
-.NET wykazał się lepszym rezultatem w obu badaniach w porównaniu z NestJS.
+Nie da się wyodrębnić jednoznacznie zwycięzcę zestawienia.
+Każdy framework wykazał się mocnymi stronami na tle innych w różnych kontekstach.
 
-Istotnym czynnikiem decydującym o wyborze frameworka jest doświadczenie oraz łatwość pisania.
-Są to czynniki indywidualne które nie podlegały dogłębnej analizie podczas tego badania.
-Jest to doskonały materiał na rozszerzenie niniejszej pracy.
-Ostatecznie wybór odpowiedniego frameworka ma pomóc z sukcesem zrealizować projekt biznesowy.
+Wybór rozwiązania w projekcie zależy od wielu czynników, wśród których badane parametry są jednymi z wielu.
+Niezwykle istotny jest czynnik ludzki w projecie.
+Osoby w projekcie kierują się różnymi motywacjami oraz mają doświadczenie z przeróżnymi narzędziami.
+Zbadane obszary rzucają światło na fragment złożonego procesu decyzyjnego dotyczącego wyboru frameworka.

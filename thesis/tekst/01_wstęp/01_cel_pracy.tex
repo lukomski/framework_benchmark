@@ -4,11 +4,11 @@ W pracy dokonano analizy porównawczej trzech wybranych frameworków serwującyc
 Pod uwagę został wzięty aspekt czasu odpowiedzi w różnych warunkach.
 Badanie ma na celu wskazać mocne oraz słabe strony każdego z porównywanych narzędzi.
 Badany jest wycinek rzeczywistości, który najlepiej jest przedstawiać poprzez analizę porównawczą.
-Bezwględne wartości mogą się różnić w zależności od warunków uruchomienia, natomiast relacje między badanymi obiektami powinny być stale zauważalne.
+Bezwzględne wartości mogą się różnić w zależności od warunków uruchomienia, natomiast relacje między badanymi obiektami powinny być stale zauważalne.
 
 
-Testy można dzielić na rodzaje pod różnymi względami. 
-Podstawowy podział testów został zaprezentowany na rysynku \ref{rys:test-types}\cite{atlassianRneRodzaje}.
+Testy można podzielić na rodzaje pod różnymi względami. 
+Podstawowy podział testów został zaprezentowany na rysunku \ref{rys:test-types}\cite{atlassianRneRodzaje}.
 \begin{figure}[!hb]
 	\centering \includegraphics[width=1\linewidth]{rysunki/test-types.png}
 	\caption{Rodzaje testów}
@@ -29,14 +29,14 @@ Wiąże się to z ograniczeniami związanymi ze zwiększonymi kosztami czasowymi
 
 Testy funkcjonalne nastawione są na sprawdzenie wymagań biznesowych aplikacji.
 Ich złożoność podobna jest do testów integracyjnych.
-Dziedziną badania jest sprawdzenie czy kluczowe elementy ich funkcjonalności są zrealizowane.
+Dziedziną badania jest sprawdzenie czy kluczowe elementy ich funkcjonalności są realizowane.
 
-Kompleksowe testy służą do badaja całej aplikacji.
+Kompleksowe testy służą do badania całej aplikacji.
 Testy te wymagają uruchomienia całego systemu w celu jego przetestowania.
 Z powodu ich kosztowności zaleca się ograniczenie liczby tych testów do minimum.
 Uruchomienie ich najlepiej weryfikuje czy badana aplikacja działa.
 
-Testy akceptacyjne służą do weryfikacji czy kluczowe wymagania biznesowe są zrealizowane.
+Testy akceptacyjne służą do weryfikacji czy kluczowe wymagania biznesowe są realizowane.
 Wymagają one również uruchomienia całej aplikacji przez co są kosztowne.
 
 Smoke testy są rodzajem testów, które mają wyłapać błędy widoczne na pierwszy rzut oka.
@@ -56,7 +56,7 @@ Piramida ta została zaprezentowana na rysunku \ref{rys:test-pyramid}.
 \end{figure}
 Testy jednostkowe są realizowane na najniższym poziomie piramidy, a więc tego rodzaju testów powinno być najwięcej jako, że są tanie w utrzymaniu.
 Wraz ze wzrostem poziomu piramidy, koszt utrzymania oraz uruchomienia testów rośnie.
-Sposób podziału testów jest umowny więc wszystkie niewymienione rodzaje testów również znajdują się w piramidzie obok najbliższego im rodzaju testów.
+Sposób podziału testów jest umowny więc wszystkie nie wymienione rodzaje testów również znajdują się w piramidzie obok najbliższego im rodzaju testów.
 
 
 Testy przeprowadzone w niniejszej pracy przynależą do kategorii testów wydajnościowych.
@@ -71,7 +71,7 @@ Ich zadaniem jest identyfikacja obszarów ryzyka zachowania w czasie, wykorzysta
 
 Typy testów wydajnościowych zostały zaprezentowane na rysunku \ref{rys:performance-tests}.
 
-Testowanie obciążenia to badanie zdolności systemu do obsługi wzrastającego obciążenia przy realistycznych, przywidywanych liczbach użytkowników mających interakcje z systemem.
+Testowanie obciążenia to badanie zdolności systemu do obsługi wzrastającego obciążenia przy realistycznych, przewidywanych liczbach użytkowników mających interakcje z systemem.
 
 Testowanie przeciążające to badanie realizowane przy danych przekraczających realistyczne obciążenie. 
 Ma ono na celu znalezienie granicy.

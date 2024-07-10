@@ -3,7 +3,7 @@ Każda z aplikacji została skonfigurowana do korzystania z bazy danych PostgreS
 Schemat środowiska badawczego został zaprezentowany na rysunku \ref{rys:docker_schema}.
 Całe środowisko, a więc aplikacja oraz baza danych, zostało uruchomione w kontenerach Docker w lokalnym środowisku.
 Część zbierania danych została oddzielona od samego opracowywania wyników.
-Grafana K6 zapisywał pliki z wynikami, które następnie były konsumowane przez skrypt opracowyjący wyniki.
+Grafana K6 zapisywał pliki z wynikami, które następnie były konsumowane przez skrypt opracowujący wyniki.
 Skrypty zostały napisane w Jupiter Notebook, które pozwala uruchamiać skrypty systemowe oraz w języku python w ramach arkusza.
 Zaletą tego rozwiązania jest zapisany nie tylko skrypt ale również wynik standardowego wyjścia programu.
 Dowolny fragment arkusz może zostać uruchomiony powtórnie, co pozwala na szybkie korygowanie skryptów gdy otrzymamy nieoczekiwany wynik.

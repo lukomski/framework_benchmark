@@ -5,16 +5,16 @@ W tym kontekście przygotowano dwa zbiory danych, aby umożliwić różnorodne a
 
 \begin{itemize}
   \item \textbf{FWB\_0} - Jest to zbiór pusty, pozbawiony jakichkolwiek elementów. Brak danych w tym zbiorze ma posłużyć do sprawdzenia zachowania systemu w sytuacji, gdy nie ma żadnych rekordów do przetworzenia.
-  \item \textbf{FWB\_100K} - Ten zbiór składa się z 100 000 elementów. Każdy element tego zbioru reprezentuje pojedynczy rekord w bazie danych i zawiera unikalne identyfikatory (numery) oraz nazwy (tekstowe). Zbiór ten został przygotowany w celu przetestowania wydajności systemu oraz jego reakcji na duże ilości danych.
+  \item \textbf{FWB\_100K} - Ten zbiór składa się z 100 000 elementów. Każdy element tego zbioru reprezentuje pojedynczy rekord w bazie danych i zawiera unikalne identyfikatory ID (numery) oraz nazwy (tekstowe). Zbiór ten został przygotowany w celu przetestowania wydajności systemu oraz jego reakcji na duże ilości danych.
 \end{itemize}
 \phantom
 \\
-Jeden element to rekord w bazie danych zawierający ID (number) oraz nazwę (tekst).
+
 Przygotowanie tych zbiorów danych stanowiło niezbędny krok przed przystąpieniem do właściwej analizy i symulacji różnych scenariuszy w badaniu. 
-Istotą badania systemu w sytuacji gdy nie on żadnych wartości do zwrócenia jest instejący narzut potrzebny do przetworzenia zapytania.
+Istotą badania systemu w sytuacji gdy nie ma on żadnych wartości do zwrócenia jest istniejący narzut potrzebny do przetworzenia zapytania.
 W takim wypadku nie istnieje potrzeba konstruowania kompleksowych modeli do zwrócenia.
 Wynik jest prosty, a więc badane jest stałe obciążenie pojawiające się w zapytaniu dowolnej wielkości.
 
 Jako drugi zbiór został wybrany zbiór z dużą ilością danych.
-W tym wypadku stały narzut związany przetwarzaniem jest również obecny natomiast poprzez dużą ilość danych powinien mieć marginane znaczenie.
-Każdy framework w momencie tworzenia miał inne priorytety, stąd dla jedengo duża ilość może być przygniatająca, podczas gdy inny może być gotowy przetworzyć większe ilości.
+W tym wypadku stały narzut związany z przetwarzaniem jest również obecny natomiast poprzez dużą ilość danych powinien mieć marginalne znaczenie.
+Każdy framework w momencie tworzenia miał inne priorytety, stąd dla jednego duża ilość może być przygniatająca, podczas gdy inny może przetworzyć większe ilości.

@@ -1,11 +1,3 @@
-pdflatex : clean
-	pdflatex EE-dyplom
-	biber EE-dyplom
-	makeglossaries EE-dyplom
-	pdflatex EE-dyplom
-	pdflatex EE-dyplom
-
-	
 xelatex : clean
 	xelatex EE-dyplom
 	biber EE-dyplom
@@ -13,5 +5,10 @@ xelatex : clean
 	xelatex EE-dyplom
 	xelatex EE-dyplom
 
-clean :
-	-rm *.acn *.app *.aux *.bbl *.blg *.bcf *.glo *.ist *.lof *.log *.lot *.out *.pdf *.run.xml *.slo *.toc
+pdf:
+	pdflatex  -interaction=nonstopmode  -output-directory="latex-out"  EE-dyplom.tex
+	biber ./latex-out/EE-dyplom
+	makeglossaries -d ./latex-out EE-dyplom
+	pdflatex  -interaction=nonstopmode  -output-directory="latex-out"  EE-dyplom.tex
+	pdflatex  -interaction=nonstopmode  -output-directory="latex-out"  EE-dyplom.tex
+	cp latex-out/EE-dyplom.pdf .

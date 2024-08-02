@@ -799,7 +799,9 @@
 % oświadczenia o autorstwie i udzielenia licencji BG PW.
 %    \authorship
 %    \licensedthesis
-    \tableofcontents
+    \begin{spacing}{0.98}
+        \tableofcontents
+    \end{spacing}
     \cleardoublepage
     \pagestyle{headings}
 }
@@ -823,13 +825,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcounter{easyappendix}[chapter]
 \newenvironment{easyappendix}[1]{
-    \cleardoublepage
     \refstepcounter{easyappendix}
-    \addcontentsline{app}{chapter}{\hspace{1em}\theeasyappendix\hspace{1em} #1\dotfill}
+    \addcontentsline{toc}{section}{\protect\numberline{}#1}
     \par\bigskip
     \Huge{\textbf{\appendixname~\theeasyappendix}}
     \par\medskip
-    \Huge{\textbf{#1}}
+    \section*{\textbf{#1}}
     \par\bigskip
     \normalsize
 }{}

@@ -10,9 +10,21 @@ Podmiana instancji wymaga zatrzymania chociaż na chwilę działania usługi.
 Utrzymywanie urządzenia o dużej mocy obliczeniowej, tylko po to wytrzymało potencjalne skoki zapotrzebowania na moc obliczeniową wiąże się ze zwiększonymi kosztami.
 
 \begin{figure}[!hb]
-	\centering \includegraphics[width=0.5\linewidth]{rysunki/vertical_archtecture.png}
-	\caption{Schemat architektury wertykalnej}
-	\label{rys:veriticalArchitecture}
+	\resizebox{1\textwidth}{!}{%
+	\begin{minipage}{.2\textwidth}
+	  \centering
+	  \includegraphics[height=6cm]{rysunki/vertical_archtecture.png}
+	  \caption{Schemat architektury wertykalnej}
+	  \label{rys:veriticalArchitecture}
+	\end{minipage}
+	\quad
+	\begin{minipage}{.8\textwidth}
+	  \centering
+	  \includegraphics[height=7.5cm]{rysunki/horizontal_archtecture.png}
+	  \caption{Schemat architektury horyzontalnej}
+	  \label{rys:horizontalArchitecture}
+	\end{minipage}
+	}
 \end{figure}
 
 
@@ -23,8 +35,4 @@ Kiedy ruch jest bardzo mały, tylko jedna aplikacji może być uruchomiona.
 Wraz ze wzrostem obciążenia mogą być dynamicznie uruchamiane kolejne instancje aplikacji.
 Jest to możliwe dzięki środowiskom chmurowym, gdzie uruchomienie kolejnej instancji aplikacji nie wymaga postawienia kolejnego urządzenia fizycznego.
 
-\begin{figure}[!hb]
-	\centering \includegraphics[width=1\linewidth]{rysunki/horizontal_archtecture.png}
-	\caption{Schemat architektury horyzontalnej}
-	\label{rys:horizontalArchitecture}
-\end{figure}
+
